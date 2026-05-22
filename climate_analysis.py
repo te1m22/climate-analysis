@@ -22,10 +22,11 @@ for line in climate_data:
         # extract our max temperature in Fahrenheit - 4th column
         fahr = float(data[3])
 
-# TODO: Add rainfall processing code
         # don't process invalid temperature readings of -9999
         if fahr != -9999:
             celsius = temp_conversion.fahr_to_celsius(fahr)
             kelvin = temp_conversion.fahr_to_kelvin(fahr)
 
             print(str(celsius)+", "+str(kelvin))
+
+# TODO: Add rainfall processing code
